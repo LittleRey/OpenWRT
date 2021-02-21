@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Newifi D2
+name: Newifi D2 - LEAN
 
 on:
   repository_dispatch:
