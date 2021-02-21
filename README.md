@@ -1,5 +1,5 @@
 # Actions-OpenWrt
-Welcome to my GitHub! This repository is to build OpenWRT firmware which provided by -[OpenWRT](https://github.com/openwrt/openwrt) and -[Lean's OpenWRT](https://github.com/coolsnowwolf/lede). And thank to [P3TERX](https://github.com/P3TERX/Actions-OpenWRT) for his Actions-OpenWRT scripts.
+Welcome to my GitHub! This repository is to build OpenWRT firmware using source code provided by [OpenWRT](https://github.com/openwrt/openwrt) and [Lean's OpenWRT](https://github.com/coolsnowwolf/lede). Thank to [P3TERX](https://github.com/P3TERX/Actions-OpenWRT) for his Actions-OpenWRT scripts and some scripts by [binge8](https://github.com/binge8/op).
 
 ## Usage
 
