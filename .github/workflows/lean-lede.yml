@@ -38,6 +38,11 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
+    #- name: WeChat notification #WeChat ServerChan Push Notification
+    #  run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=${{ env.FILE_NAME }}starting compile.
+    #- name: TG notification #Telegram Push Notification
+    #  run: curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=${{ env.FILE_NAME }}starting compile."
+
     - name: Checkout
       uses: actions/checkout@main
 
@@ -188,3 +193,10 @@ jobs:
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    #- name: WeChat notification #WeChat ServerChan Push Notification
+    #  if: steps.organize.outputs.status == 'success' && !cancelled()
+    #  run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=${{ env.FILE_NAME }}firmware successfully upload, compile done.
+    #- name: TG Firmware done compile notification #Telegram Push Notification
+    #  if: steps.organize.outputs.status == 'success' && !cancelled()
+    #  run: curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=${{ env.FILE_NAME }}firmware successfully upload, compile done."
