@@ -3,10 +3,10 @@ Welcome to my GitHub! This repository is to build OpenWRT firmware using source 
 
 ## Usage
 
-- Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
-- Generate `.config` files using [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) source code. ( You can change it through environment variables in the workflow file. )
+- Click the [Use this template](https://github.com/Keith2002/OpenWRT/generate) button to create a new repository.
+- Generate `.config` files using **any OpenWRT source code**. ( You can change it through environment variables in the workflow file. )
 - Push `.config` file to the GitHub repository.
-- Select `Build OpenWrt` on the Actions page.
+- Select one of the target you want on the Actions page.
 - Click the `Run workflow` button.
 - When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
 
