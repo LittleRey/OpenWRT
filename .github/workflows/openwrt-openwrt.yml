@@ -33,7 +33,7 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
-  FILE_NAME: Newifi D2 Official OpenWRT
+  FILE_NAME: Newifi D2 - Official
 
 jobs:
   build:
